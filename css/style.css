@@ -15,17 +15,6 @@ body {
     
 }
 
-header {
-    position: fixed;
-    height: 15vw;
-    width: 100vw;
-    background: #ef4f4f;
-}
-
-nav {
-    background: #ef4f4f;
-    
-}
 
 p {
     font-size: 1.5rem;
@@ -47,6 +36,55 @@ h1 {
 
 #index_grid_wrapper {
     background-color: crimson;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-template-areas: 
+    "he"
+    "na"
+    "ar"
+    "fo";
+    gap: 0;
+}
+
+
+header {
+    position: fixed;
+    height: 15vw;
+    width: 100vw;
+    background: #ef4f4f;
+}
+
+nav {
+    background: #00ff40;
+    grid-area: na;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "s1 s2"
+    "s3 s4";
+    
+}
+
+#section_1 {
+    background: #00ff40;
+    
+}
+
+article {
+    grid-area: ar;
+    background: #89dcff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: crimson;
+    grid-area: fo;
+    position: fixed;
+    height: 15vw;
+    width: 100vw;
+    
 }
 
 /* cssabout */
@@ -61,3 +99,6 @@ h1 {
 
 
 /* cssindex */
+#img_landskap {
+    width: 100vw;
+}
