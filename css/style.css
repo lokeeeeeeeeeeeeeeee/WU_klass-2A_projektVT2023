@@ -11,10 +11,13 @@
   }
 
 body {
-    background: #ffffff;
-    gap: 5px
+    background: #303030;
+  
 }
 
+a {
+    color: white;
+}
 
 p {
     font-size: 1.5rem;
@@ -39,15 +42,11 @@ h2 {
     font-size: 2rem;
     color: white;
     font-family: 'Rubik', sans-serif;
-    margin-left: 30px;
-}
-
-#index_grid_wrapper {
-    
 }
 
 
 header {
+    display: flex;
     position: fixed;
     height: 15vw;
     width: 100vw;
@@ -84,7 +83,7 @@ article {
 }
 
 footer {
-    background: #303030;
+    background: #ca4444ff;
     height: 30vw;
     width: 100vw;
     
@@ -99,16 +98,56 @@ footer a{
 
 /* css_index */
 
+#index_grid_wrapper {
+    
+}
+
 #img_landskap {
+    margin-top: 50px;
     width: 100vw;
 }
 
+#img_cykel {
+    width: 80vw;
+}
+
+
+#article_index {
+    height: 500vw;
+    display: flex;
+    align-items: center;
+}
 
 /* css_about */
+#grid_wrapper_about {
+
+}
 
 
+#article_how_everything_started {
+    height: 215vw;
+    display: flex;
+    align-items: center;
+}
 
+#article_article_a_passion_for_exploring {
+    height: 2vw;
+    display: flex;
+    align-items: center;
+}
 
+#img_stig {
+    width: 100vw;
+
+}
+
+#img_fotograf {
+    width: 80vw;
+}
+
+#img_flod {
+    width: 80vw;
+}
 
 
 /* css_booking */
